@@ -1,0 +1,213 @@
+body {
+  background: #333;
+  color: #aaa;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  /*background: rgb(68,68,68,0.95);*/
+  background: #373737;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+}
+
+.form-control {
+  background: #333;
+  color: #d5d5d5;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  background: #303030;
+  color: #d5d5d5;
+  border-color: #07b1f0;
+}
+
+#submit {
+  background: #444;
+  color: #d5d5d5;
+  border-radius: 5px;
+}
+
+#newitemform, #optionview {
+  display: none;
+  margin-left:auto;
+  margin-right:auto;
+  width:440px;
+}
+
+/* PROGRESS BARS */
+.floatleft .Regular {
+  background-color: #a9a9a9 !important;
+  border-bottom: 2px solid #a9a9a9;
+}
+
+.floatleft .Red {
+  background-color: #bb4545 !important;
+  border-bottom: 2px solid #bb4545;
+}
+
+.floatleft .Yellow {
+  background-color: #bba145 !important;
+  border-bottom: 2px solid #bba145;
+}
+
+.floatleft .Green {
+  background-color: #45bb75 !important;
+  border-bottom: 2px solid #45bb75;
+}
+
+.floatleft .Blue {
+  background-color: #4591bb !important;
+  border-bottom: 2px solid #4591bb;
+}
+
+.floatleft .Regular, .floatleft .Red, .floatleft .Yellow, .floatleft .Green, .floatleft .Blue {
+  background-position: top right !important;
+}
+
+.floatright .Regular, .floatright .Red, .floatright .Yellow, .floatright .Green, .floatright .Blue {
+  background-color: #666 !important;
+  border-bottom: 2px solid #666;
+}
+
+/* LIST ITEMS */
+.list-group .Regular {
+  border-bottom: 4px solid #a9a9a9;
+}
+
+.list-group .Red {
+  border-bottom: 4px solid #bb4545;
+}
+
+.list-group .Yellow {
+  border-bottom: 4px solid #bba145;
+}
+
+.list-group .Green {
+  border-bottom: 4px solid #45bb75;
+}
+
+.list-group .Blue {
+  border-bottom: 4px solid #4591bb;
+}
+
+#mainlist {
+  width: 350px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.list-group-item {
+  background: #333;
+  color: #d5d5d5;
+  border-color: #c5c5c5;
+  border-radius:5px;
+}
+
+.list-group-item:hover {
+  background: #383838;
+}
+
+.checkbox label:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.checkbox .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
+  border-radius: .25em;
+  width: 1.3em;
+  height: 1.3em;
+  float: left;
+  margin-right: .5em;
+  margin-top:1px;
+}
+
+.checkbox .cr .cr-icon {
+  position: absolute;
+  font-size: .8em;
+  line-height: 0;
+  top: 50%;
+  left: 20%;
+}
+
+.checkbox label input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon {
+  transform: scale(5) rotateZ(-10deg);
+  opacity: 0;
+  transition: all .5s;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
+  transform: scale(2) rotateZ(0deg);
+  opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr {
+  opacity: .5;
+}
+
+.item-options {
+  opacity:0;
+}
+
+.list-group-item:hover .item-options {
+  opacity:1;
+}
+
+.item-option {
+  opacity:0.6;
+}
+
+.item-option:hover {
+  cursor:hand;
+  opacity:1;
+}
+
+.bg-lightgrey {
+  background-color:#e1e1e1;
+  color:#555 !important;
+}
+
+.progress-bar-text, .rprogress-bar-text {
+  opacity:0.5;
+  display:none;
+}
+
+.progress-bar:hover .progress-bar-text, .rprogress-bar:hover .rprogress-bar-text {
+  display:block;
+}
+
+.tooltipster-batu .tooltipster-content {
+  font-size:0.7em;
+  padding:2px 5px;
+}
+
+.datetimepicker {
+  background: #222;
+  width: 200px;
+}
+
+td.active, span.active {
+  background:#444 !important;
+}
+
+td.day:hover, th.prev:hover, th.switch:hover, th.next:hover, span.hour:hover, span.minute:hover {
+  background:#333 !important;
+}
+
+th.dow {
+  color: #444;
+}
